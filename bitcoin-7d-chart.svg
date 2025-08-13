@@ -1,0 +1,88 @@
+<svg width="900" height="450" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+        </linearGradient>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+          <feMerge> 
+            <feMergeNode in="coloredBlur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      
+      <!-- Background with subtle gradient -->
+      <defs>
+        <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#fafafa;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#f5f5f5;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <rect width="900" height="450" fill="url(#backgroundGradient)" stroke="#e5e7eb" stroke-width="1" rx="16"/>
+      
+      <!-- Header section -->
+      <rect x="0" y="0" width="900" height="65" fill="#ffffff" rx="16"/>
+      <rect x="0" y="55" width="900" height="10" fill="#ffffff"/>
+      
+      <!-- Grid lines -->
+      <line x1="70" y1="70" x2="830" y2="70" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/><line x1="70" y1="132" x2="830" y2="132" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/><line x1="70" y1="194" x2="830" y2="194" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/><line x1="70" y1="256" x2="830" y2="256" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/><line x1="70" y1="318" x2="830" y2="318" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/><line x1="70" y1="380" x2="830" y2="380" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/>
+      <line x1="70" y1="70" x2="70" y2="380" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/><line x1="178.57142857142856" y1="70" x2="178.57142857142856" y2="380" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/><line x1="287.1428571428571" y1="70" x2="287.1428571428571" y2="380" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/><line x1="395.7142857142857" y1="70" x2="395.7142857142857" y2="380" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/><line x1="504.2857142857143" y1="70" x2="504.2857142857143" y2="380" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/><line x1="612.8571428571429" y1="70" x2="612.8571428571429" y2="380" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/><line x1="721.4285714285714" y1="70" x2="721.4285714285714" y2="380" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/><line x1="830" y1="70" x2="830" y2="380" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2"/>
+      
+      <!-- Price line with glow effect -->
+      <path d="M 70.00,380.00 L 178.57,277.07 L 287.14,309.75 L 395.71,317.27 L 504.29,201.04 L 612.86,221.83 L 721.43,161.59 L 830.00,70.00" fill="none" stroke="url(#lineGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+      
+      <!-- Data points with larger circles -->
+      <circle cx="70" cy="380" r="6" fill="#10b981" stroke="white" stroke-width="3"/>
+         <circle cx="70" cy="380" r="3" fill="white" opacity="0.8"/><circle cx="178.57142857142856" cy="277.0704841596656" r="6" fill="#10b981" stroke="white" stroke-width="3"/>
+         <circle cx="178.57142857142856" cy="277.0704841596656" r="3" fill="white" opacity="0.8"/><circle cx="287.1428571428571" cy="309.7493460332386" r="6" fill="#10b981" stroke="white" stroke-width="3"/>
+         <circle cx="287.1428571428571" cy="309.7493460332386" r="3" fill="white" opacity="0.8"/><circle cx="395.7142857142857" cy="317.26581680666663" r="6" fill="#10b981" stroke="white" stroke-width="3"/>
+         <circle cx="395.7142857142857" cy="317.26581680666663" r="3" fill="white" opacity="0.8"/><circle cx="504.2857142857143" cy="201.03627454265708" r="6" fill="#10b981" stroke="white" stroke-width="3"/>
+         <circle cx="504.2857142857143" cy="201.03627454265708" r="3" fill="white" opacity="0.8"/><circle cx="612.8571428571429" cy="221.82664773422167" r="6" fill="#10b981" stroke="white" stroke-width="3"/>
+         <circle cx="612.8571428571429" cy="221.82664773422167" r="3" fill="white" opacity="0.8"/><circle cx="721.4285714285714" cy="161.59059151911572" r="6" fill="#10b981" stroke="white" stroke-width="3"/>
+         <circle cx="721.4285714285714" cy="161.59059151911572" r="3" fill="white" opacity="0.8"/><circle cx="830" cy="70" r="6" fill="#10b981" stroke="white" stroke-width="3"/>
+         <circle cx="830" cy="70" r="3" fill="white" opacity="0.8"/>
+      
+      <!-- Chart axes -->
+      <line x1="70" y1="70" x2="70" y2="380" stroke="#475569" stroke-width="2"/>
+      <line x1="70" y1="380" x2="830" y2="380" stroke="#475569" stroke-width="2"/>
+      
+      <!-- Title -->
+      <text x="30" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="bold" fill="#0f172a">
+        Bitcoin (BTC) - 7 Day Price Chart
+      </text>
+      
+      <!-- Subtitle -->
+      <text x="30" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b">
+        Weekly Performance • 8 daily data points • Live data from CoinGecko API
+      </text>
+      
+      <!-- Current price -->
+      <text x="870" y="32" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="bold" fill="#0f172a">
+        $122,375
+      </text>
+      
+      <!-- Price change with trend indicator -->
+      <text x="870" y="50" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#10b981">
+        📈 +6.39% (7 days)
+      </text>
+      
+      <!-- Y-axis price labels -->
+      <text x="55" y="75" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">$122K</text><text x="55" y="137" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">$121K</text><text x="55" y="199" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">$119K</text><text x="55" y="261" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">$118K</text><text x="55" y="323" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">$116K</text><text x="55" y="385" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">$115K</text>
+      
+      <!-- X-axis time labels -->
+      <text x="70" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">Thu, Aug 7</text><text x="178.57142857142856" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">Fri, Aug 8</text><text x="287.1428571428571" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">Sat, Aug 9</text><text x="395.7142857142857" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">Sun, Aug 10</text><text x="504.2857142857143" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">Mon, Aug 11</text><text x="612.8571428571429" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">Tue, Aug 12</text><text x="721.4285714285714" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">Wed, Aug 13</text><text x="830" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">Wed, Aug 13</text>
+      
+      <!-- Weekly statistics box -->
+      <rect x="680" y="90" width="180" height="80" fill="rgba(255,255,255,0.95)" stroke="#e2e8f0" stroke-width="1" rx="8"/>
+      <text x="690" y="110" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#374151">Weekly Statistics</text>
+      <text x="690" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6b7280">High: $122,375</text>
+      <text x="690" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6b7280">Low: $115,022</text>
+      <text x="690" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6b7280">Volatility: 6.4%</text>
+      
+      <!-- Chart info -->
+      <text x="450" y="435" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94a3b8">
+        Generated 8/13/2025, 9:39:36 PM • Professional Bitcoin Price Analysis
+      </text>
+    </svg>
